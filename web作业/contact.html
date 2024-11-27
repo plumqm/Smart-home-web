@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 智能家居</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">产品</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="contact.html">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>联系我们</h1>
+            <p>如果您有任何问题或建议，请随时与我们联系</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">电话</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">留言</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <i>📍</i>
+                    <div class="info-content">
+                        <h3>地址</h3>
+                        <p>北京市朝阳区科技园区88号智能大厦</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i>📞</i>
+                    <div class="info-content">
+                        <h3>电话</h3>
+                        <p>400-888-8888</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i>✉️</i>
+                    <div class="info-content">
+                        <h3>邮箱</h3>
+                        <p>contact@smarthome.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i>⏰</i>
+                    <div class="info-content">
+                        <h3>工作时间</h3>
+                        <p>周一至周五: 9:00 - 18:00</p>
+                        <p>周末: 10:00 - 16:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <h2>我们的位置</h2>
+            <div class="map-placeholder">
+                地图加载中...
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/js.js"></script>
+</body>
+
+</html>
